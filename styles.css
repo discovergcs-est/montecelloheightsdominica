@@ -4356,6 +4356,12 @@ section {
         font-size: 2.1rem;
     }
 
+       .about-signature {
+        text-align: left;
+    }
+
+    .about-signature h2 {
+        text-align: left;
 
     /* STAY */
 
