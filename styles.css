@@ -682,7 +682,7 @@ section {
 }
 
 .surroundings-heading > p:not(.small-title) {
-    color: var(--soft-cream);
+    color: var(--white);
     font-size: 14px;
     line-height: 1.8;
 }
@@ -1025,7 +1025,7 @@ section {
 
 .contact-detail i {
     width: 20px;
-    color: var(--terracotta);
+    color: var(--soft-cream);
 }
 
 .contact-form {
