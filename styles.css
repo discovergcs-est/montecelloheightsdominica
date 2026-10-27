@@ -1354,6 +1354,7 @@ section {
     }
 
 
+   
     /* ABOUT */
 
     .about-section {
@@ -1374,7 +1375,6 @@ section {
     .about-text h2 {
         font-size: 2.1rem;
     }
-
 
     /* STAY */
 
@@ -4143,10 +4143,9 @@ section {
         gap: 45px;
     }
 
-    .about-image img {
+   .about-image img {
         height: 450px;
     }
-
     .footer-content {
         grid-template-columns: 1fr 1fr;
         gap: 40px;
