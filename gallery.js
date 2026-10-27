@@ -134,3 +134,65 @@ if (year) {
     year.textContent = new Date().getFullYear();
 
 }
+
+ // Scroll to Top Button
+    const upBtn = document.querySelector('.up');
+
+    function toggleUpBtn() {
+      if (window.scrollY > 200) {
+        upBtn.classList.add('show-up-btn');
+      } else {
+        upBtn.classList.remove('show-up-btn');
+      }
+    }
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+
+    window.addEventListener('scroll', toggleUpBtn);
+    upBtn.addEventListener('click', scrollToTop);
+
+//NAV BAR
+ 
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".navbar nav a");
+
+function activateNavLink() {
+  let scrollY = window.scrollY;
+  let pageBottom = scrollY + window.innerHeight;
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 200;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute("id");
+
+    // Normal section detection
+    if (
+      scrollY >= sectionTop &&
+      scrollY < sectionTop + sectionHeight
+    ) {
+      setActive(sectionId);
+    }
+
+    // Force last section (CONTACT) when at page bottom
+    if (pageBottom >= document.body.scrollHeight - 5) {
+      setActive("contact");
+    }
+  });
+}
+
+function setActive(id) {
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === `#${id}`) {
+      link.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", activateNavLink);
+
