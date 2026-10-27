@@ -954,7 +954,6 @@ section {
     font-size: 12px;
 }
 
-
 /* =====================================================
    FADE EFFECT
 ===================================================== */
@@ -1486,6 +1485,7 @@ section {
     .booking-section h2 {
         font-size: 2.1rem;
     }
+
 
 
     /* FOOTER */
@@ -2684,21 +2684,30 @@ section {
         border-radius: 12px;
     }
 
-
+   
     /* FOOTER */
 
-    footer {
-        padding: 25px 20px;
-        font-size: 13px;
+  
+    .main-footer {
+        padding: 40px 20px 20px;
     }
 
     .footer-content {
-        display: grid;
         grid-template-columns: 1fr;
-        gap: 25px;
-        text-align: center;
+        gap: 30px;
     }
 
+    .footer-column h2 {
+        font-size: 20px;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+    }
 }
 
 
