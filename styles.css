@@ -5570,9 +5570,9 @@ section {
     }
 }
 
- /* ===
-       Scroll to Top Button
-   === */
+/* =========================
+   UP ARROW
+========================= */
 
     .up {
       position: fixed;
@@ -5604,3 +5604,30 @@ section {
      box-shadow: 0 14px 35px rgba(198, 90, 30, 0.55);
     }
 
+/* =========================
+   FOOTER ADJUSTMENT
+========================= */
+@media (max-width: 480px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: left;
+        justify-items: start;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: left;
+        justify-self: start;
+    }
+
+    .footer-column h2,
+    .footer-column h3,
+    .footer-column p,
+    .footer-column a {
+        text-align: left;
+    }
+
+    .footer-bottom {
+        text-align: left;
+    }
+}
