@@ -347,7 +347,7 @@ section {
     overflow: hidden;
     border-top: none;
     border-bottom: 1px solid var(--sand);
-    background: var(--soft-cream);
+    background: var( --tropical-green);
 }
 
 .stats-track {
@@ -383,7 +383,7 @@ section {
 }
 
 .stat-label {
-    color: var(--gray);
+    color: var(--soft-cream);
     font-size: 10px;
     font-weight: 500;
     letter-spacing: 2px;
