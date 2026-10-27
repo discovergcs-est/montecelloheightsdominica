@@ -1497,6 +1497,21 @@ section {
     .main-footer {
         padding: 55px 30px 20px;
     }
+   .footer-column p {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-column p i {
+    flex-shrink: 0;
+    width: 16px;
+    margin-top: 4px;
+}
+
+.footer-column p {
+    overflow-wrap: anywhere;
+}
 
 
     /* CONTACT */
