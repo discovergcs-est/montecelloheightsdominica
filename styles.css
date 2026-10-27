@@ -1658,6 +1658,7 @@ section {
 
     .home-stats {
         padding: 18px 0;
+        overflow: hidden;
     }
 
     .stat {
