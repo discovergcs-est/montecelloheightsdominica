@@ -2431,6 +2431,376 @@ section {
 
 
 /* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) and (min-width: 701px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 15px 25px;
+    }
+
+    .logo {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+
+    .navbar nav {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .navbar nav a {
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    .book-button {
+        padding: 9px 14px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 100px 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+
+    /* SECTIONS */
+
+    .section {
+        padding: 80px 30px;
+    }
+
+
+    /* ABOUT */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    .about-content p {
+        margin: 0 auto;
+    }
+
+    .about-line {
+        margin: 20px auto 26px;
+    }
+
+
+    /* VIDEOS */
+
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 25px 30px;
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 14px 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        order: 1;
+    }
+
+    .logo {
+        order: 2;
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+
+    .book-button {
+        order: 3;
+        margin-left: auto;
+        padding: 9px 12px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .navbar nav {
+        display: none;
+        width: 100%;
+        order: 4;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0 5px;
+        background: var(--soft-cream);
+    }
+
+    .navbar nav.active {
+        display: flex;
+    }
+
+    .navbar nav a {
+        width: 100%;
+        margin: 0;
+        padding: 12px 0;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(30, 30, 30, 0.12);
+    }
+
+    .navbar nav a:last-child {
+        border-bottom: none;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 100vh;
+        padding: 100px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+
+    /* SECTIONS */
+
+    .section {
+        padding: 70px 20px;
+    }
+
+
+    /* ABOUT */
+
+    .about-signature {
+        height: auto;
+        min-height: 100vh;
+        padding: 80px 20px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 30px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+        margin: 0 auto;
+    }
+
+    .about-line {
+        margin: 20px auto 26px;
+    }
+
+
+    /* VIDEOS */
+
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .video-card video {
+        border-radius: 14px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .gallery-item {
+        height: 180px;
+        border-radius: 12px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 25px 20px;
+        font-size: 13px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 15px;
+    }
+
+
+    /* NAV */
+
+    .logo {
+        font-size: 12px;
+    }
+
+    .book-button {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding: 90px 18px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+
+    /* SECTIONS */
+
+    .section {
+        padding: 60px 18px;
+    }
+
+
+    /* ABOUT */
+
+    .about-signature {
+        padding: 70px 18px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .about-image img {
+        border-radius: 16px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery-item {
+        height: 220px;
+    }
+
+
+    /* VIDEOS */
+
+    .video-card p {
+        font-size: 14px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 22px 18px;
+        font-size: 12px;
+    }
+
+}
+/* =========================
    MOBILE NAVIGATION
 ========================= */
 
