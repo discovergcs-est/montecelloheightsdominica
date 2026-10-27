@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,9 +8,13 @@
 
     <title>Montecello Heights | Contact</title>
 
-    <!-- Fonts and icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
@@ -29,71 +33,46 @@
             <span></span>
         </button>
 
-   
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Montecello Heights | Contact</title>
-
-    <!-- Fonts and icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <header class="navbar">
-
-        <button class="menu-toggle" id="menu-toggle" type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false" aria-controls="main-nav">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-           <a href="index.html#home" class="logo">Montecello Heights</a>
+        <a href="home.html#home" class="logo">Montecello Heights</a>
 
         <nav id="main-nav">
-            <a href="index.html#home">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="index.html#stay">Stay</a>
-            <a href="index.html">Gallery</a>
-            <a href="index.html#explore">Explore</a>
-            <a href="index.html#location">Location</a>
+            <a href="home.html#home">Home</a>
+            <a href="home.html#about">About</a>
+            <a href="home.html#stay">Stay</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="home.html#explore">Explore</a>
+            <a href="home.html#location">Location</a>
             <a href="contact.html">Contact</a>
         </nav>
 
-        <a href="https://www.airbnb.com/rooms/1003044596802186522?guests=1&adults=1&s=67&unique_share_id=46f0b1b3-e2d2-4bd4-80cd-ef42fb481775"
-           class="book-button" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.airbnb.com/rooms/1003044596802186522"
+           class="book-button"
+           target="_blank"
+           rel="noopener noreferrer">
             Book Now
         </a>
 
     </header>
 
 
-    <!-- Page heading -->
+    <!-- Page Heading -->
     <section class="contact-title">
+
         <h1>Contact</h1>
 
         <div class="down-arrow">
             <i class="fa-solid fa-chevron-down"></i>
         </div>
+
     </section>
 
 
-    <!-- Contact information and form -->
+    <!-- Contact Information and Form -->
     <section class="contact-section">
 
+        <!-- Contact Information -->
         <div class="contact-info">
+
             <p class="small-title">CONTACT US</p>
 
             <h2>Have Questions?<br>Get in Touch!</h2>
@@ -124,60 +103,91 @@
                 <i class="fa-solid fa-envelope"></i>
                 <span>keirannewton32@gmail.com</span>
             </div>
+
         </div>
 
 
+        <!-- Contact Form -->
         <div class="contact-form">
-            <form>
+
+            <!-- Add your form service endpoint to the action attribute -->
+            <form action="" method="POST">
 
                 <div class="form-row">
+
                     <div class="input-box">
                         <i class="fa-regular fa-user"></i>
-                        <input type="text" name="name"
-                               placeholder="Name" required>
+
+                        <input type="text"
+                               name="name"
+                               placeholder="Name"
+                               autocomplete="name"
+                               required>
                     </div>
 
                     <div class="input-box">
                         <i class="fa-regular fa-envelope"></i>
-                        <input type="email" name="email"
-                               placeholder="Email Address" required>
+
+                        <input type="email"
+                               name="email"
+                               placeholder="Email Address"
+                               autocomplete="email"
+                               required>
                     </div>
+
                 </div>
 
+
                 <div class="form-row">
+
                     <div class="input-box">
                         <i class="fa-solid fa-phone"></i>
-                        <input type="tel" name="phone"
-                               placeholder="Phone">
+
+                        <input type="tel"
+                               name="phone"
+                               placeholder="Phone"
+                               autocomplete="tel">
                     </div>
 
                     <div class="input-box">
                         <i class="fa-regular fa-circle-question"></i>
-                        <input type="text" name="subject"
+
+                        <input type="text"
+                               name="subject"
                                placeholder="Subject">
                     </div>
+
                 </div>
+
 
                 <div class="message-box">
                     <i class="fa-regular fa-pen-to-square"></i>
+
                     <textarea name="message"
                               placeholder="How can we help you? Feel free to get in touch!"
                               required></textarea>
                 </div>
 
+
                 <div class="form-bottom">
+
                     <button type="submit">
                         <i class="fa-regular fa-paper-plane"></i>
                         Send Message
                     </button>
 
                     <label>
-                        <input type="checkbox" name="data-consent">
+                        <input type="checkbox"
+                               name="data-consent"
+                               required>
+
                         I agree that my data can be collected and stored.
                     </label>
+
                 </div>
 
             </form>
+
         </div>
 
     </section>
@@ -185,11 +195,13 @@
 
     <!-- Map -->
     <section class="map-section">
+
         <iframe
             src="https://www.google.com/maps?q=Portsmouth,Dominica&output=embed"
             title="Map showing Portsmouth, Dominica"
             loading="lazy">
         </iframe>
+
     </section>
 
 
@@ -198,17 +210,22 @@
 
         <div class="footer-content">
 
+            <!-- Brand -->
             <div class="footer-column brand-column">
+
                 <h2>MONTECELLO<br>HEIGHTS</h2>
 
                 <p>
                     A peaceful escape surrounded by
                     the beauty of Dominica.
                 </p>
+
             </div>
 
 
+            <!-- Contact Details -->
             <div class="footer-column">
+
                 <h3>Contact</h3>
 
                 <p>
@@ -230,243 +247,58 @@
                     <i class="fa-solid fa-envelope"></i>
                     keirannewton32@gmail.com
                 </p>
+
             </div>
 
 
+            <!-- Quick Links -->
             <div class="footer-column">
+
                 <h3>Quick Links</h3>
 
-                <a href="home.html#home">Home</a>
-                <a href="home.html#about">About</a>
-                <a href="home.html#stay">Stay</a>
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#stay">Stay</a>
                 <a href="gallery.html">Gallery</a>
-                <a href="home.html#explore">Explore</a>
+                <a href="index.html#explore">Explore</a>
+                <a href="index.html#location">Location</a>
                 <a href="contact.html">Contact</a>
+
             </div>
 
 
+            <!-- Booking -->
             <div class="footer-column">
+
                 <h3>Plan Your Stay</h3>
 
                 <p>Ready to experience Montecello Heights?</p>
 
-                <a href="https://www.airbnb.com/rooms/1003044596802186522?guests=1&adults=1&s=67&unique_share_id=46f0b1b3-e2d2-4bd4-80cd-ef42fb481775"
-                   class="footer-book" target="_blank"
+                <a href="https://www.airbnb.com/rooms/1003044596802186522"
+                   class="footer-book"
+                   target="_blank"
                    rel="noopener noreferrer">
                     Book Your Stay
                 </a>
+
             </div>
 
         </div>
 
+
+        <!-- Copyright -->
         <div class="footer-bottom">
+
             <p>© 2026 Montecello Heights. All Rights Reserved.</p>
+
         </div>
 
     </footer>
 
 
+    <!-- JavaScript -->
     <script src="montecelloh.js"></script>
 
 </body>
 </html>
-
-
-        <a href="https://www.airbnb.com/rooms/1003044596802186522?guests=1&adults=1&s=67&unique_share_id=46f0b1b3-e2d2-4bd4-80cd-ef42fb481775"
-           class="book-button" target="_blank" rel="noopener noreferrer">
-            Book Now
-        </a>
-
-    </header>
-
-
-    <!-- Page heading -->
-    <section class="contact-title">
-        <h1>Contact</h1>
-
-        <div class="down-arrow">
-            <i class="fa-solid fa-chevron-down"></i>
-        </div>
-    </section>
-
-
-    <!-- Contact information and form -->
-    <section class="contact-section">
-
-        <div class="contact-info">
-            <p class="small-title">CONTACT US</p>
-
-            <h2>Have Questions?<br>Get in Touch!</h2>
-
-            <p class="contact-description">
-                Planning your stay at Montecello Heights?
-                We would love to hear from you. Send us a message
-                and we'll be happy to help with any questions
-                about your stay.
-            </p>
-
-            <div class="contact-detail">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Dominica</span>
-            </div>
-
-            <div class="contact-detail">
-                <i class="fa-solid fa-phone"></i>
-                <span>+1 767 316 1100</span>
-            </div>
-
-            <div class="contact-detail">
-                <i class="fa-solid fa-phone"></i>
-                <span>+1 767 295 4885</span>
-            </div>
-
-            <div class="contact-detail">
-                <i class="fa-solid fa-envelope"></i>
-                <span>keirannewton32@gmail.com</span>
-            </div>
-        </div>
-
-
-        <div class="contact-form">
-            <form>
-
-                <div class="form-row">
-                    <div class="input-box">
-                        <i class="fa-regular fa-user"></i>
-                        <input type="text" name="name"
-                               placeholder="Name" required>
-                    </div>
-
-                    <div class="input-box">
-                        <i class="fa-regular fa-envelope"></i>
-                        <input type="email" name="email"
-                               placeholder="Email Address" required>
-                    </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="input-box">
-                        <i class="fa-solid fa-phone"></i>
-                        <input type="tel" name="phone"
-                               placeholder="Phone">
-                    </div>
-
-                    <div class="input-box">
-                        <i class="fa-regular fa-circle-question"></i>
-                        <input type="text" name="subject"
-                               placeholder="Subject">
-                    </div>
-                </div>
-
-                <div class="message-box">
-                    <i class="fa-regular fa-pen-to-square"></i>
-                    <textarea name="message"
-                              placeholder="How can we help you? Feel free to get in touch!"
-                              required></textarea>
-                </div>
-
-                <div class="form-bottom">
-                    <button type="submit">
-                        <i class="fa-regular fa-paper-plane"></i>
-                        Send Message
-                    </button>
-
-                    <label>
-                        <input type="checkbox" name="data-consent">
-                        I agree that my data can be collected and stored.
-                    </label>
-                </div>
-
-            </form>
-        </div>
-
-    </section>
-
-
-    <!-- Map -->
-    <section class="map-section">
-        <iframe
-            src="https://www.google.com/maps?q=Portsmouth,Dominica&output=embed"
-            title="Map showing Portsmouth, Dominica"
-            loading="lazy">
-        </iframe>
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="main-footer">
-
-        <div class="footer-content">
-
-            <div class="footer-column brand-column">
-                <h2>MONTECELLO<br>HEIGHTS</h2>
-
-                <p>
-                    A peaceful escape surrounded by
-                    the beauty of Dominica.
-                </p>
-            </div>
-
-
-            <div class="footer-column">
-                <h3>Contact</h3>
-
-                <p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    Dominica, Portsmouth
-                </p>
-
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    +1 767 316 1100
-                </p>
-
-                <p>
-                    <i class="fa-solid fa-phone"></i>
-                    +1 767 295 4885
-                </p>
-
-                <p>
-                    <i class="fa-solid fa-envelope"></i>
-                    keirannewton32@gmail.com
-                </p>
-            </div>
-
-
-            <div class="footer-column">
-                <h3>Quick Links</h3>
-
-                <a href="home.html#home">Home</a>
-                <a href="home.html#about">About</a>
-                <a href="home.html#stay">Stay</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="home.html#explore">Explore</a>
-                <a href="contact.html">Contact</a>
-            </div>
-
-
-            <div class="footer-column">
-                <h3>Plan Your Stay</h3>
-
-                <p>Ready to experience Montecello Heights?</p>
-
-                <a href="https://www.airbnb.com/rooms/1003044596802186522?guests=1&adults=1&s=67&unique_share_id=46f0b1b3-e2d2-4bd4-80cd-ef42fb481775"
-                   class="footer-book" target="_blank"
-                   rel="noopener noreferrer">
-                    Book Your Stay
-                </a>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2026 Montecello Heights. All Rights Reserved.</p>
-        </div>
-
-    </footer>
-
-
-    <script src="montecelloh.js"></script>
-
-</body>
-</html>
+```
