@@ -2968,3 +2968,38 @@ section {
         transition-duration: 0.01ms !important;
     }
 }
+
+  /* ===
+       Scroll to Top Button
+   === */
+
+    .up {
+      position: fixed;
+      bottom: 10px;
+      right: 20px;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #5F8065, #23483A);      color: white;
+      box-shadow: 0 10px 25px rgba(198, 90, 30, 0.35);
+      font-size: 16px;
+      cursor: pointer;
+      z-index: 9999; 
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .up.show-up-btn {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .up:hover {
+     transform: translateY(-12%);
+     box-shadow: 0 14px 35px rgba(198, 90, 30, 0.55);
+    }
+
