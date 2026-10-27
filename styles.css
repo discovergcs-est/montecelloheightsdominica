@@ -520,6 +520,7 @@ section {
     z-index: 1;
     height: 540px;
     object-fit: cover;
+    border-radius: 0 !important;
 }
 
 .about-text {
@@ -2639,7 +2640,7 @@ section {
 
     .about-image img {
         width: 100%;
-        border-radius: 20px;
+        border-radius: 0 !important;
     }
 
     .about-content {
@@ -2778,7 +2779,7 @@ section {
     }
 
     .about-image img {
-        border-radius: 16px;
+    border-radius: 0 !important;
     }
 
 
@@ -5609,7 +5610,7 @@ section {
 
     .up:hover {
      transform: translateY(-12%);
-     box-shadow: 0 14px 35px rgba(198, 90, 30, 0.55);
+     box-shadow: 0 14px 35px rgba(35, 72, 58, 0.55);    
     }
 
 /* =========================
