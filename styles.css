@@ -1925,9 +1925,6 @@ section {
     }
 }
 
-ugh just edit the whole code please
-
-i want the navigation to be similar to the gallery 
 /* =========================
    GENERAL
 ========================= */
@@ -2628,8 +2625,5 @@ section {
       pointer-events: auto;
     }
 
-    .up:hover {
-     transform: translateY(-12%);
-     box-shadow: 0 14px 35px rgba(198, 90, 30, 0.55);
-    }
+ 
 
