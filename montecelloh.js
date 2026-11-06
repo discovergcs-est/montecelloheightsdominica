@@ -72,7 +72,6 @@ if (slides.length > 0) {
 
 }
 
-
 /* =========================
    MOBILE NAVIGATION
 ========================= */
@@ -81,15 +80,16 @@ const menuToggle = document.getElementById("menu-toggle");
 const mainNav = document.getElementById("main-nav");
 
 
-/* OPEN AND CLOSE MENU */
-
 if (menuToggle && mainNav) {
+
+    /* OPEN AND CLOSE MENU */
 
     menuToggle.addEventListener("click", function () {
 
+        menuToggle.classList.toggle("active");
         mainNav.classList.toggle("active");
 
-        const isOpen = mainNav.classList.contains("active");
+        const isOpen = menuToggle.classList.contains("active");
 
         menuToggle.setAttribute("aria-expanded", isOpen);
 
@@ -107,6 +107,7 @@ if (menuToggle && mainNav) {
 
         link.addEventListener("click", function () {
 
+            menuToggle.classList.remove("active");
             mainNav.classList.remove("active");
 
             menuToggle.setAttribute("aria-expanded", "false");
@@ -117,6 +118,30 @@ if (menuToggle && mainNav) {
             );
 
         });
+
+    });
+
+
+    /* CLOSE MENU WHEN CLICKING OUTSIDE */
+
+    document.addEventListener("click", function (event) {
+
+        if (
+            !menuToggle.contains(event.target) &&
+            !mainNav.contains(event.target)
+        ) {
+
+            menuToggle.classList.remove("active");
+            mainNav.classList.remove("active");
+
+            menuToggle.setAttribute("aria-expanded", "false");
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+        }
 
     });
 
